@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+
+    body{
+        background: url(../imagens/back-tablet.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .tablet{
+        display: block;
+        margin: auto;
+    }
+
+    .celular,.pc,.tv,.print{
+        display: none;
+    }
+
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+
+    body{
+        background: url(../imagens/back-pc.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .pc{
+        display: block;
+        margin: auto;
+    }
+
+    .tablet,.celular,.tv,.print{
+        display: none;
+    }
+
+}
+
+/* Grandes telas ( tv ) */
+@media screen and (min-width: 1200px) {
+
+    body{
+        background: url(../imagens/back-tv.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .tv{
+        display: block;
+        margin: auto;
+    }
+
+    .pc,.celular,.print,.print{
+        display: none;
+    }
+
+}
