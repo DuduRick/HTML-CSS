@@ -51,8 +51,43 @@
         margin: auto;
     }
 
-    .pc,.celular,.print,.print{
+    .pc,.celular,.print,.tablet{
         display: none;
     }
 
+}
+
+@media print {
+
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 500px;
+        padding: 10px;
+        text-align: center;
+        
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+    }
+
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    .print{
+        display: block;
+        margin: auto;
+    }
+    
+    .pc,.tv,.tablet,.celular{
+        display: none;
+    }
+
+    
 }
