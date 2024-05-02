@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+
+            <p>
+                <label for="icolor">Cor</label>
+                <input type="color" name="color" id="icolor" required>
+            </p>
+
+            <p>
+                <label for="isatisfaction">Nivel de Satisfação</label>
+                <input type="range" name="satisfaction" id="isatisfaction" required max="10" >
+            </p>
+
+            <p>
+                <label for="iphoto">Foto do perfil</label>
+                <input type="file" name="photo" id="iphoto" required>
+            </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
