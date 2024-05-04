@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+        <p>
+            <label for="iyear">Em que ano você nasceu?</label>
+            <input type="number" name="year" id="iyear" required min="1900" max="2024" oninput="calcAge()">
+        </p>
+
+        <p>
+            <label for="iage">Sua idade é: </label>
+            <output id="iage">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcAge() {
+            let atual = new Date().getFullYear()
+            iage.innerHTML = Number(atual) - Number(iyear.value)
+        }
+    </script>
+</body>
+</html>
