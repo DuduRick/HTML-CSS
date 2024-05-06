@@ -1,9 +1,30 @@
 @charset "UTF-8";
 
+@media print {
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    #printer{
+        display: block;
+        margin: auto;
+    }
+
+    #phone{
+        display: none;
+    }
+}
+
 @media  screen and (min-width: 768px) and (max-width: 992px){
     
     body{
-        background: url(../imagens/back-tablet.jpg) no-repeat center center;
+        background: url(../imagens/back-tablet.jpg)no-repeat center center;
         background-size: cover;
     }
 
