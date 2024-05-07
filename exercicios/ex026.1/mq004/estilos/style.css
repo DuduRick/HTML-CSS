@@ -40,7 +40,6 @@ li{
     background-color: rgb(87, 87, 87);
     list-style-type: none;
     padding: 10px;
-    display: none;
 }
 
 li:hover{
